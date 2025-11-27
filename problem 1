@@ -1,0 +1,15 @@
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main() {
+    ifstream fin("input.txt");
+    int x, sum = 0;
+
+    while (fin >> x) {
+        sum += x;
+    }
+
+    cout << sum;
+    return 0;
+}
