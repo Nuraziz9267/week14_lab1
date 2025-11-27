@@ -1,0 +1,16 @@
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main() {
+    ifstream fin("numbers.txt");
+
+    int x, mx;
+    fin >> mx;            
+    while (fin >> x) {
+        if (x > mx) mx = x;
+    }
+
+    cout << mx;
+    return 0;
+}
