@@ -1,0 +1,13 @@
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main() {
+    int x;
+    cin >> x;
+
+    ofstream fout("log.txt", ios::app);
+    fout << " " << x;
+
+    return 0;
+}
