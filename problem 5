@@ -1,0 +1,15 @@
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main() {
+    ifstream fa("a.txt"), fb("b.txt");
+
+    int cnt = 0, x;
+
+    while (fa >> x) cnt++;
+    while (fb >> x) cnt++;
+
+    cout << cnt;
+    return 0;
+}
